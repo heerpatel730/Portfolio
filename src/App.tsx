@@ -48,7 +48,7 @@ export default function Portfolio() {
               variant="outlined"
               size="large"
               startIcon={<Linkedin />}
-              href="https://www.linkedin.com/in/heer-patel"
+              href="https://www.linkedin.com/in/heer~patel"
               target="_blank"
               sx={{ borderRadius: "14px", paddingX: 3, textTransform: "none" }}
             >
@@ -216,7 +216,7 @@ export default function Portfolio() {
         </section>
         {/* FOOTER */}
         <footer className="text-center text-sm text-slate-500 pb-6">
-          © 2026 Heer Patel
+          © Heer Patel
         </footer>
       </div>
     </section>
