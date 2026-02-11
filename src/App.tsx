@@ -29,7 +29,7 @@ export default function Portfolio() {
           </motion.h1>
 
           <p className="mt-3 text-lg text-slate-600 max-w-xl">
-            UI Developer & Integration Specialist • React • TypeScript • AWS • System Integration • Agile
+            Software Developer
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
