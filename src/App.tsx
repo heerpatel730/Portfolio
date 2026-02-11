@@ -164,7 +164,7 @@ export default function Portfolio() {
           </motion.div>
         </section>
         {/* SKILLS SECTION */}
-        <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10 bg-gradient-to-br from-slate-50 via-white to-slate-200">
+        <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10 bg-white rounded-3xl shadow-lg">
         <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -194,7 +194,7 @@ export default function Portfolio() {
         </section>
 
         {/* EDUCATION SECTION */}
-        <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10 bg-gradient-to-br from-slate-50 via-white to-slate-200">
+        <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10 bg-white rounded-3xl shadow-lg">
           <h2 className="text-2xl sm:text-3xl font-semibold mb-4 text-center">Education</h2>
           <motion.div
             initial={{ opacity: 0, y: 40 }}
