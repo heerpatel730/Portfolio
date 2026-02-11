@@ -28,7 +28,7 @@ export default function Portfolio() {
             Heer Patel
           </motion.h1>
 
-          <div className="mt-8 flex flex-col sm:flex-row gap-4">
+          <div className="mt-10 mb-10 flex flex-col sm:flex-row gap-7 sm:gap-8">
             <Button
               variant="contained"
               size="large"
@@ -51,11 +51,10 @@ export default function Portfolio() {
               LinkedIn
             </Button>
           </div>
-          <div></div>
         </section>
 
         {/* ABOUT SECTION */}
-        <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+        <section className="max-w-6xl mx-auto px-4 sm:px-6 pt-16 pb-10">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -173,7 +172,7 @@ export default function Portfolio() {
             viewport={{ once: true }}
           >
           <h2 className="text-2xl sm:text-3xl font-semibold mb-4 text-center">Skills</h2>
-          <p className="text-slate-600 text-center">
+          <p className="text-slate-600 text-center rounded-3xl shadow-xl">
             Programming: C, C++, C#, PHP, Java, JavaScript, HTML/CSS, Python, R, TypeScript, Laravel | 
             Frameworks: ReactJS, AngularJS, Java Swing, Android, WordPress, ASP.net, Ajax, Spring Boot, Express, Playwright, Jest | 
             Databases: MySQL, Oracle, SQLite | 
@@ -191,7 +190,7 @@ export default function Portfolio() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-          <p className="text-slate-600 text-center">
+          <p className="text-slate-600 text-center rounded-3xl shadow-xl">
             <strong>University of Texas Arlington</strong> | Master of Science in Computer Science | GPA: 3.54/4 | Aug 2021 – May 2023<br/>
             <strong>Indus University</strong> | Bachelor of Engineering in Computer Science | GPA: 4/4 | Aug 2017 – May 2021
           </p>
@@ -200,7 +199,12 @@ export default function Portfolio() {
         {/* PROJECTS SECTION */}
         <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
           <h2 className="text-2xl sm:text-3xl font-semibold mb-6 text-center">Projects</h2>
-
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <Card elevation={0} className="rounded-3xl shadow-xl">
               <CardContent className="p-6 sm:p-10">
@@ -224,6 +228,7 @@ export default function Portfolio() {
               </CardContent>
             </Card>
           </div>
+          </motion.div>
         </section>
         {/* FOOTER */}
         <footer className="text-center text-sm text-slate-500 pb-6">
