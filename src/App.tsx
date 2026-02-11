@@ -164,7 +164,7 @@ export default function Portfolio() {
           </motion.div>
         </section>
         {/* SKILLS SECTION */}
-        <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+        <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10 bg-gradient-to-br from-slate-50 via-white to-slate-200">
         <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -182,7 +182,7 @@ export default function Portfolio() {
         </section>
 
         {/* EDUCATION SECTION */}
-        <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+        <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10 bg-gradient-to-br from-slate-50 via-white to-slate-200">
           <h2 className="text-2xl sm:text-3xl font-semibold mb-4 text-center">Education</h2>
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -199,13 +199,13 @@ export default function Portfolio() {
         {/* PROJECTS SECTION */}
         <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
           <h2 className="text-2xl sm:text-3xl font-semibold mb-6 text-center">Projects</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <Card elevation={0} className="rounded-3xl shadow-xl">
               <CardContent className="p-6 sm:p-10">
                 <h3 className="text-lg font-semibold mb-2">File Storage Cloud Application</h3>
@@ -216,7 +216,13 @@ export default function Portfolio() {
                 </ul>
               </CardContent>
             </Card>
-
+            </motion.div>
+            <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             <Card elevation={0} className="rounded-3xl shadow-xl">
               <CardContent className="p-6 sm:p-10">
                 <h3 className="text-lg font-semibold mb-2">Say It Right</h3>
@@ -227,8 +233,9 @@ export default function Portfolio() {
                 </ul>
               </CardContent>
             </Card>
+            </motion.div>
           </div>
-          </motion.div>
+          
         </section>
         {/* FOOTER */}
         <footer className="text-center text-sm text-slate-500 pb-6">
