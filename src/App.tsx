@@ -172,12 +172,24 @@ export default function Portfolio() {
             viewport={{ once: true }}
           >
           <h2 className="text-2xl sm:text-3xl font-semibold mb-4 text-center">Skills</h2>
-          <p className="text-slate-600 text-center rounded-3xl shadow-xl">
+          <Card elevation={0} className="rounded-3xl shadow-xl">
+              <CardContent className="p-6 sm:p-10">
+                <ul className="!list-none space-y-2 text-slate-600" style={{ listStyle: "none", paddingLeft: 0, margin: 0 }}>
+                  <li><b>Programming:</b> C, C++, C#, PHP, Java, JavaScript, HTML/CSS, Python, R, TypeScript, Laravel</li>
+                  <li><b>Frameworks:</b> ReactJS, AngularJS, Java Swing, Android, WordPress, ASP.net, Ajax, Spring Boot, Express, Playwright, Jest</li>
+                  <li><b>Databases:</b> MySQL, Oracle, SQLite</li>
+                  <li><b>IDEs:</b> R Studio, MATLAB, XAMPP, NetBeans, Visual Studio, Eclipse</li>
+                  <li><b>AI Tools:</b> Amazon Q, ChatGPT, Gemini, Claude, Grammarly</li>
+                  <li><b>Additional:</b> AWS, Linux,  MVC,  Agile,  GitLab, GitHub, Rest APIs, JMeter, Jira, Excel, Word, Confluence, SonarQube</li>
+                </ul>
+              </CardContent>
+            </Card>
+          {/* <p className="text-slate-600 text-center rounded-3xl shadow-xl">
             Programming: C, C++, C#, PHP, Java, JavaScript, HTML/CSS, Python, R, TypeScript, Laravel | 
             Frameworks: ReactJS, AngularJS, Java Swing, Android, WordPress, ASP.net, Ajax, Spring Boot, Express, Playwright, Jest | 
             Databases: MySQL, Oracle, SQLite | 
             Tools: AWS, Linux, MVC, Agile, GitLab, GitHub, REST APIs, JMeter, Jira, Confluence, SonarQube
-          </p>
+          </p> */}
           </motion.div>
         </section>
 
