@@ -28,10 +28,6 @@ export default function Portfolio() {
             Heer Patel
           </motion.h1>
 
-          <p className="mt-3 text-lg text-slate-600 max-w-xl">
-            Software Developer
-          </p>
-
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <Button
               variant="contained"
@@ -55,6 +51,7 @@ export default function Portfolio() {
               LinkedIn
             </Button>
           </div>
+          <div></div>
         </section>
 
         {/* ABOUT SECTION */}
@@ -90,11 +87,11 @@ export default function Portfolio() {
             <Card elevation={0} className="rounded-3xl shadow-xl mb-6">
               <CardContent className="p-6 sm:p-10">
                 <h3 className="text-xl font-semibold mb-2">
-                  UI Developer / Integration Specialist | Radial Inc., United States
+                  UI Developer | Radial Inc., United States
                 </h3>
                 <p className="text-slate-500 mb-4">July 2023 – Feb 2026</p>
                 <ul className="list-disc list-inside text-slate-600 space-y-2">
-                  <li>Integrated client-facing applications with REST APIs, reducing reported issues by 90%.</li>
+                  <li>Integrated client-facing applications with REST APIs.</li>
                   <li>Implemented lazy loading, dynamic imports, code splitting, and Redis caching, improving performance and reducing resource usage.</li>
                   <li>Automated testing and monitoring with Jest, Playwright, JMeter, and Lighthouse, reducing manual QA effort by 70%.</li>
                   <li>Built PCI-DSS–compliant hosted payment solutions with Klarna, credit cards, and saved wallets.</li>
@@ -169,6 +166,12 @@ export default function Portfolio() {
         </section>
         {/* SKILLS SECTION */}
         <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+        <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
           <h2 className="text-2xl sm:text-3xl font-semibold mb-4 text-center">Skills</h2>
           <p className="text-slate-600 text-center">
             Programming: C, C++, C#, PHP, Java, JavaScript, HTML/CSS, Python, R, TypeScript, Laravel | 
@@ -176,15 +179,23 @@ export default function Portfolio() {
             Databases: MySQL, Oracle, SQLite | 
             Tools: AWS, Linux, MVC, Agile, GitLab, GitHub, REST APIs, JMeter, Jira, Confluence, SonarQube
           </p>
+          </motion.div>
         </section>
 
         {/* EDUCATION SECTION */}
         <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
           <h2 className="text-2xl sm:text-3xl font-semibold mb-4 text-center">Education</h2>
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
           <p className="text-slate-600 text-center">
             <strong>University of Texas Arlington</strong> | Master of Science in Computer Science | GPA: 3.54/4 | Aug 2021 – May 2023<br/>
             <strong>Indus University</strong> | Bachelor of Engineering in Computer Science | GPA: 4/4 | Aug 2017 – May 2021
           </p>
+          </motion.div>
         </section>
         {/* PROJECTS SECTION */}
         <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
