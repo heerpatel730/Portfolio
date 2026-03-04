@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Button, Card, CardContent } from "@mui/material";
 import { Linkedin, Download } from "lucide-react";
 import profile from "./assets/profile.jpg";
-import resume from "./assets/resume.pdf";
+import resume from "./assets/Patel_Heer.pdf";
 export default function Portfolio() {
   return (
     <section className="flex items-center justify-center min-h-[60vh] px-4">
